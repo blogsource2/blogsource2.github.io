@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goFit</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: turquoise;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/Capture3.PNG);
+        background-repeat: no-repeat;
+        background-color: turquoise;
+        /* border: 2px solid black; */
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        /* width: 433px;
+        height: 15px; */
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    img {
+        width: 64px;
+        filter: invert();
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 30%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+
+    .right {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        /* width: 433px;
+        height: 15px; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(128, 125, 125);
+    }
+
+    .container {
+        border: 2px solid black;
+        text-align: center;
+        margin: 30px 30px;
+        padding: 0px 25px;
+        width: 33%;
+        border-radius: 23px;
+    }
+
+    .btn {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 0px 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(134, 129, 129);
+    }
+
+    .form-group input {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        display: block;
+        width: 290px;
+        padding: 7px;
+        margin: 4px auto;
+        border-radius: 10px;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+
+    }
+</style>
+
+<body>
+    <div class="left">
+        <header class="header">
+            <img src="img/logo.PNG" alt="">
+            <div>goFitness</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active"> Home</a></li>
+            <li><a href="#">About Us</a> </li>
+            <li><a href="#"> Fittness Calculator</a></li>
+            <li><a href="#">Contact Us</a> </li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <button class="btn">call us</button>
+        <button class="btn">email-Us</button>
+    </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Prayagraj now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+                <input type="text" name="" placeholder="enter your age">
+                <input type="text" name="" placeholder="enter your gender">
+                <input type="text" name="" placeholder="enter your mobile no.">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
